@@ -1,4 +1,4 @@
-## Funktionale Programmierung mit F#
+## Funktionale Programmierung mit FSharp
 Es geht um die Kernkonzepte der funktionalen Programmierung. Dazu gehört zum Beispiel *Immutability*, *Data Types*, *Partial Application* und *Pattern Matching* die in praktischen Übungen angewendet werden. Dabei werden auch F#-spezifische Sprachfeatures wie *Active Patterns* und *Object Expressions* behandelt.
 
 ### Voraussetzungen
@@ -6,20 +6,20 @@ Es geht um die Kernkonzepte der funktionalen Programmierung. Dazu gehört zum Be
 * F# Entwicklungsumgebung, Auswahl und Installationsanteilung für [Windows](http://fsharp.org/use/windows/), [Mac](http://fsharp.org/use/mac/) oder [Linux](http://fsharp.org/use/linux/)
 
 ### Themen
+* function definition
 * functional purity
     * pure - no side effects
-    * immutable data structures
-        * mutable [*F#*]
-    * expressions
+    * expressions - immutable values
+        * mutable keyword [*F#*]
+        * reference cells [*F#*]
 * first class functions
-    * currying
-    * partial application
-    * composition
-        * pipelines [*F#*]
-        * Tacit programming, i.e. *point-free style*
-    * recursion
     * higher order functions
     * lambdas
+    * partial application
+        * Tacit programming, i.e. *point-free style*
+    * composition
+        * pipelines [*F#*]
+    * recursion
 * type system
     * type inference
     * algebraic data types
@@ -27,6 +27,7 @@ Es geht um die Kernkonzepte der funktionalen Programmierung. Dazu gehört zum Be
         * make illegal states unrepresentable
     * unit [*F#*]
     * object expressions [*F#*]
+* currying = first class functions + tuple
 * pattern matching
     * active patterns [*F#*]
 * workflows
