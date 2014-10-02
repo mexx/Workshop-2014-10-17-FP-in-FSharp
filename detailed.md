@@ -34,7 +34,7 @@ let f x = x + 1
 ```
 Es gibt keine Variablen!
 ##### mutable keyword
-Man kann in F# auch imperativ programmieren, also Variablen haben , jedoch gilt es diese zu vermeiden.
+Man kann in F# auch imperativ programmieren, also Variablen haben, jedoch gilt es diese zu vermeiden.
 ```
 let mutable x = 1
 x <- x + 1
@@ -78,6 +78,7 @@ let succ x = add 1 x
 let succ x = 1 + x
 ```
 ##### Tacit programming, i.e. *point-free style*
+Also eta-reduction
 ```
 let succ x = add 1 x
 let succ = add 1
@@ -118,6 +119,7 @@ let square x = x * x
 ```
 #### recursion
 Abbruchbedingung und Rekursionsvorschrift!
+Explizite Kennzeichnung rekursiven Funktionen.
 ```
 let rec factorial (n) =
     if n = 1 then 1
@@ -125,11 +127,66 @@ let rec factorial (n) =
 ```
 ### type system
 #### type inference
-#### algebraic data types
-##### design for correctness
-##### make illegal states unrepresentable
+Typeninferenz ist eine schöne Sache, damit brauchen wir fast nie den Datentypen angeben. Bisher haben wir bei der Definitionen der Funktionen nie die Datentypen angegeben.
+#### different types
+Ist sehr reichhaltig und das sollte ausgenutzt werden.
+Es gibt die allbekannten primitiven Typen wie `int`, `float`, `bool` und `string`.
+Dann haben wir auch schon Funktionstypen kennen gelernt, wie `int -> int`.
+Natürlich gibt es das bekannte Array und die *unbekannte* Liste.
+Zusätzlich haben wir dann noch
+
+* Tuple,
+mit diesem können Daten unterschiedlichen Typs zusammengefasst werden
+
+```
+type Person = string * int
+let trainer = ("Max", 33)
+
+let name = fst trainer
+let age = snd trainer
+let name, age = trainer
+```
+* Record,
+auch mit diesem können Daten unterschiedlichen Typs zusammengefasst werden, bietet einwenig mehr als Tuple
+
+```
+type Person = { Name: string; Age: int }
+let trainer = { Name = "Max"; Age = 33 }
+
+let trainerAYearAgo = { trainer with Age = 32 }
+
+let name = trainer.Name
+let age = trainer.Age
+let { Name = name; Age = age } = trainer
+```
+* Discriminated union,
+mit diesem können unterschiedliche Ausprägungen zu einem zusammengefasst werden
+
+```
+type Person =
+| Trainer
+| Student
+
+type Point = {X: float; Y: float}
+type Shape =
+| Circle of center: Point * radius: float
+| Rect of corner: Point * width: float * height: float
+```
+
+Tuple und Record sind die sogenannten Produkttypen, DU ist ein Summentyp.
+##### design for correctness / make illegal states unrepresentable
+Mit vorgestellten Möglichkeiten ist es ein Leichtes ein korrektes Abbild der Domäne zu schaffen, damit nur die Zustände darstellbar werden, welche auch tatsächlich erlaubt bzw. möglich sind.
 #### unit [*F#*]
+Manchmal, wenn man Funktionen mit Wirkung haben muss, z.B. IO, Zeit oder Random, dann gibt es entweder keine Eingabe oder keine Ausgabe. In anderen Sprachen wird dafür entweder ein Schlüsselwort oder gar Konstrukt verwendet. In F# gibt es dafür einen speziellen Datentypen `unit` mit einzigem Wert `()`.
 #### object expressions [*F#*]
+```
+let mock = { new IInterface with member __.Method() = "3" }
+```
+#### type extensions [*F#*]
+```
+type System.String with
+    member x.M() = x.Substring(0, 1)
+```
 
 ### currying = first class functions + tuple
 ```
@@ -138,3 +195,8 @@ val add : (int, int) -> int
 let addCurried x y = add (x, y)
 val addCurried : int -> int -> int
 ```
+
+### pattern matching
+#### active patterns [*F#*]
+### workflows
+#### computational expressions [*F#*]

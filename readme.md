@@ -22,11 +22,11 @@ Es geht um die Kernkonzepte der funktionalen Programmierung. Dazu gehört zum Be
     * recursion
 * type system
     * type inference
-    * algebraic data types
-        * design for correctness
-        * make illegal states unrepresentable
+    * different types
+        * design for correctness / make illegal states unrepresentable
     * unit [*F#*]
     * object expressions [*F#*]
+    * type extensions [*F#*]
 * currying = first class functions + tuple
 * pattern matching
     * active patterns [*F#*]
@@ -36,7 +36,6 @@ Es geht um die Kernkonzepte der funktionalen Programmierung. Dazu gehört zum Be
 ### Notes
 * indentation is for scope
 * modules are for code organization
-* type extensions
 * object oriented programming in F#
 * unit of measure
 
@@ -46,3 +45,4 @@ Es geht um die Kernkonzepte der funktionalen Programmierung. Dazu gehört zum Be
 * [F# for fun and profit](http://fsharpforfunandprofit.com/)
 * [F# Active Patterns](www.devjoy.com/series/active-patterns/)
 * [F# for you](http://fsharp4u.com/)
+* [F# cheat sheet](http://dungpa.github.io/fsharp-cheatsheet/)
