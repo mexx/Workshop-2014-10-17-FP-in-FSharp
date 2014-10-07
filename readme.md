@@ -46,3 +46,4 @@ Es geht um die Kernkonzepte der funktionalen Programmierung. Dazu gehört zum Be
 * [F# Active Patterns](www.devjoy.com/series/active-patterns/)
 * [F# for you](http://fsharp4u.com/)
 * [F# cheat sheet](http://dungpa.github.io/fsharp-cheatsheet/)
+* [F# workshop](http://www.fsharpworkshop.com/)
