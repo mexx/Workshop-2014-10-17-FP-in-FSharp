@@ -197,6 +197,9 @@ val addCurried : int -> int -> int
 ```
 
 ### pattern matching
+Switch statements on steroids.
 #### active patterns [*F#*]
+Erweiterung des Matching mit eigenen Fällen.
+
 ### workflows
 #### computational expressions [*F#*]
