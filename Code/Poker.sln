@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Poker", "Poker.fsproj", "{CFA81B40-767C-4799-8496-745CE54FFCFE}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Poker", "Poker\Poker.fsproj", "{CFA81B40-767C-4799-8496-745CE54FFCFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
