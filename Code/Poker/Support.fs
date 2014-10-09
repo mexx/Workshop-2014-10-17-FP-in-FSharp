@@ -1,4 +1,5 @@
-﻿module Support
+﻿[<AutoOpen>]
+module Support
 
 open Microsoft.FSharp.Reflection
 

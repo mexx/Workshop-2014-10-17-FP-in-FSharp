@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="Game.fs" />
     <Compile Include="Support.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
