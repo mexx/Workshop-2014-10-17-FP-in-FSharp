@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Poker", "Poker.fsproj", "{CFA81B40-767C-4799-8496-745CE54FFCFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFA81B40-767C-4799-8496-745CE54FFCFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA81B40-767C-4799-8496-745CE54FFCFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA81B40-767C-4799-8496-745CE54FFCFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA81B40-767C-4799-8496-745CE54FFCFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
