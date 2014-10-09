@@ -1,7 +1,12 @@
-﻿open Game
+﻿open Owin
+open Microsoft.Owin.Hosting
 
-[<EntryPoint>]
-let main argv =
+open EkonBenefits.FSharp.Dynamic
+open Microsoft.AspNet.SignalR
+
+open Game
+
+let consoleTest() =
     while true do
         let game =
             deck
@@ -19,6 +24,27 @@ let main argv =
             System.Console.WriteLine()
             System.Console.WriteLine("Next game: ")
 
-    printfn "%A" argv
+type GameHub =
+    inherit Hub
+    member __.Send =
+        base.Clients.All?addMessage ()
+
+let startup (app: IAppBuilder) =
+    app.MapSignalR() |> ignore
+    ()
+
+let webserverTest() =
+    let url = "http://localhost:8085"
+
+    use app = WebApp.Start(url, startup)
+    System.Console.WriteLine("Server running on {0}", url)
     System.Console.ReadLine() |> ignore
+
+[<EntryPoint>]
+let main argv =
+    //webserverTest() |> ignore
+    consoleTest() |> ignore
+
+    //printfn "%A" argv
+    //System.Console.ReadLine() |> ignore
     0 // return an integer exit code

@@ -1,3 +1,6 @@
 source http://nuget.org/api/v2
 
 nuget FAKE
+nuget Microsoft.Owin.SelfHost
+nuget Microsoft.AspNet.SignalR.Owin
+nuget FSharp.Dynamic
