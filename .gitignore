@@ -2,4 +2,6 @@
 bin/
 obj/
 packages/
+paket-files/
 .paket/paket.exe
+Presentation/

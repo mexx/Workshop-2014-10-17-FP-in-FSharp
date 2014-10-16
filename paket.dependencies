@@ -4,3 +4,10 @@ nuget FAKE
 nuget Microsoft.Owin.SelfHost
 nuget Microsoft.AspNet.SignalR.Owin
 nuget FSharp.Dynamic
+nuget FsReveal >= 0.0.5-beta
+nuget Ninject == 3.2.3-unstable-001
+
+github fsharp/fsfoundation:gh-pages img/logo/fsharp128.png
+github kimsk/FsReveal:master docs/files/img/logo-2.png
+github fsharp/FAKE:master help/pics/logo.png
+github fsprojects/Paket:master docs/files/img/logo.png

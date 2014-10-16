@@ -2,9 +2,18 @@ NUGET
   remote: http://nuget.org/api/v2
   specs:
     Dynamitey (1.0.2.0)
-    FAKE (3.5.8)
+    FAKE (3.5.11)
+    FSharp.Compiler.Service (0.0.57)
     FSharp.Dynamic (1.4.2.0)
       Dynamitey (>= 1.0.2.0)
+    FSharp.Formatting (2.4.20)
+      FSharp.Compiler.Service (>= 0.0.57)
+      Microsoft.AspNet.Razor (>= 2.0.30506.0)
+      RazorEngine (>= 3.3.0)
+    FsReveal (0.0.5-beta)
+      FSharp.Compiler.Service (0.0.57)
+      FSharp.Formatting (2.4.20)
+    Microsoft.AspNet.Razor (3.2.2)
     Microsoft.AspNet.SignalR.Core (2.1.2)
       Microsoft.Owin (>= 2.0.1)
       Microsoft.Owin.Security (>= 2.0.1)
@@ -32,4 +41,20 @@ NUGET
       Microsoft.Owin.Hosting (>= 3.0.0)
       Owin (>= 1.0)
     Newtonsoft.Json (6.0.5)
+    Ninject (3.2.3-unstable-003)
     Owin (1.0)
+    RazorEngine (3.4.1)
+      Microsoft.AspNet.Razor (>= 3.0.0)
+GITHUB
+  remote: fsharp/fsfoundation
+  specs:
+    img/logo/fsharp128.png (436c3e2c9de633f93de1e2a1cb38ca429114af4a)
+  remote: kimsk/FsReveal
+  specs:
+    docs/files/img/logo-2.png (dbf1dae49a995716eed71673587217a089205e5f)
+  remote: fsharp/FAKE
+  specs:
+    help/pics/logo.png (41268f981d4a2c6bc616af878f8ccca47af8a6d0)
+  remote: fsprojects/Paket
+  specs:
+    docs/files/img/logo.png (8eff66a8f34b668cb308911850bbbb04fe4b1198)
