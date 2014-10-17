@@ -483,6 +483,8 @@ Beispiel:
 * [F# cheat sheet](http://dungpa.github.io/fsharp-cheatsheet/)
 * [F# workshop](http://www.fsharpworkshop.com/)
 
+* [Monad in pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html)
+
 <br/><br/>
 
 * [Functional Principles for OO Devs](http://www.youtube.com/watch?v=GpXsQ-NIKXY) by [Jessica Kerr](https://twitter.com/jessitron)
