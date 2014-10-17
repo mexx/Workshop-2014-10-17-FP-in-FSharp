@@ -33,10 +33,11 @@ Target "BuildPresentation" (fun _ ->
         let htmlFileName = changeExt ".html" filePath
         FsReveal.GenerateOutputFromMarkdownFile presentationOutputDirectory htmlFileName filePath
 
-    ["readme.md"; (*"detailed.md"*)]
+    ["readme.md"]
     |> Seq.iter gen
 
-    [__SOURCE_DIRECTORY__ @@ "paket-files"]
+    ["paket-files"; "content"]
+    |> Seq.map ((@@) __SOURCE_DIRECTORY__)
     |> Seq.iter (fun d -> CopyDir (presentationOutputDirectory @@ "assets") d (fun _ -> true))
 )
 

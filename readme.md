@@ -5,7 +5,7 @@
 - transition : default
 
 ***
-<img src="assets/fsharp/fsfoundation/img/logo/fsharp128.png" alt="F# Logo" style="background: rgba(255,255,255,0); border: 0px">
+### <img src="assets/DevOpenSpace/logo.png" alt="DevOpenSpace Logo" style="background: rgba(255,255,255,0); border: 0px; height: 128px; vertical-align: middle;"> meets <img src="assets/fsharp/fsfoundation/img/logo/fsharp128.png" alt="F# Logo" style="background: rgba(255,255,255,0); border: 0px; height: 128px; vertical-align: middle;">
 ## Funktionale Programmierung mit F#
 Es geht um die Kernkonzepte der funktionalen Programmierung. Dazu gehört zum Beispiel *Immutability*, *Data Types*, *Partial Application* und *Pattern Matching* die in praktischen Übungen angewendet werden. Dabei werden auch F#-spezifische Sprachfeatures wie *Active Patterns* und *Object Expressions* behandelt.
 

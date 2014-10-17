@@ -357,7 +357,7 @@
     </When>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETPortable'">
       <Choose>
-        <When Condition="$(TargetFrameworkProfile) == 'net40+sl5+wp80+win8+wpa81' And $(TargetPlatformIdentifier) == 'Portable' And $(TargetPlatformVersion) == '7.0'">
+        <When Condition="$(TargetFrameworkProfile) == 'Profile136' And $(TargetPlatformIdentifier) == 'Portable' And $(TargetPlatformVersion) == '7.0'">
           <ItemGroup>
             <Reference Include="Newtonsoft.Json">
               <HintPath>..\..\packages\Newtonsoft.Json\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
