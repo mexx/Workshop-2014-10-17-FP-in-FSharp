@@ -1,7 +1,7 @@
 - title : Funktionale Programmierung mit F#
 - description : Funktionale Programmierung mit F#
 - author : Max Malook
-- theme : Night
+- theme : night
 - transition : default
 
 ***
@@ -490,6 +490,10 @@ Beispiel:
 * [Functional Principles for OO Devs](http://www.youtube.com/watch?v=GpXsQ-NIKXY) by [Jessica Kerr](https://twitter.com/jessitron)
 * [Active Patterns explained](http://www.devjoy.com/series/active-patterns/) by [Richard Dalton](https://twitter.com/richardadalton)
 * [FP Europe 2014 Tour](http://bit.ly/fsTour2014) by [Mathias Brandewinder](https://twitter.com/brandewinder)
+
+<br/><br/>
+
+* [Slide and source code](https://github.com/mexx/Workshop-2014-10-17-FP-in-FSharp)
 
 ***
 ### Notes
